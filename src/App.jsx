@@ -6,8 +6,8 @@ import { FavouriteProvider } from "./providers/FavouriteProvider";
 
 function App() {
   return (
-    <Router basename="frontend-challenge/">
-      <>
+    <div>
+      <Router basename="frontend-challenge">
         <Header />
         <FavouriteProvider>
           <Routes>
@@ -15,8 +15,8 @@ function App() {
             <Route path="/favourite" element={<FavouritePage />} />
           </Routes>
         </FavouriteProvider>
-      </>
-    </Router>
+      </Router>
+    </div>
   );
 }
 
