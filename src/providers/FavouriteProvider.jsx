@@ -5,6 +5,7 @@ export const FavouriteContext = createContext({
 });
 
 export const FavouriteProvider = ({ children }) => {
+
   const [list, setList] = useState([]);
   const addFavourite = (newItem) => setList([...list, newItem]);
   const deleteFavourite = (id) =>
