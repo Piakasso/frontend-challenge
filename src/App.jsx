@@ -11,8 +11,11 @@ function App() {
         <Header />
         <FavouriteProvider>
           <Routes>
-            <Route path="/" element={<Homepage />} />
-            <Route path="/favourite" element={<FavouritePage />} />
+            <Route path="/frontend-challenge" exact element={<Homepage />} />
+            <Route
+              path="/frontend-challenge/favourite"
+              element={<FavouritePage />}
+            />
           </Routes>
         </FavouriteProvider>
       </Router>
