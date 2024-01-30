@@ -6,7 +6,7 @@ import { FavouriteProvider } from "./providers/FavouriteProvider";
 
 function App() {
   return (
-    <Router basename="/">
+    <Router basename="frontend-challenge/">
       <>
         <Header />
         <FavouriteProvider>
