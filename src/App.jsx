@@ -1,4 +1,4 @@
-import { Route, HashRouter as Router, Routes } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import FavouritePage from "./pages/FavouritePage";
 import Homepage from "./pages/Homepage";
@@ -7,7 +7,7 @@ import { FavouriteProvider } from "./providers/FavouriteProvider";
 function App() {
   return (
     <div>
-      <Router basename="frontend-challenge">
+      <Router basename="/frontend-challenge">
         <Header />
         <FavouriteProvider>
           <Routes>

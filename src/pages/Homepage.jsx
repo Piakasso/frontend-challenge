@@ -22,7 +22,7 @@ const Homepage = () => {
   const [page, setPage] = useState(0);
 
   const fetchData = () => {
-    fetch(`https://api.thecatapi.com/v1/images/search?limit=30&page=${page}`, {
+    fetch(`https://api.thecatapi.com/v1/images/search?limit=20&page=${page}`, {
       headers: { "x-api-key": apiKey },
     }).then((res) =>
       res.json().then((data) => {
